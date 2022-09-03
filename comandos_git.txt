@@ -45,6 +45,9 @@ git diff > mostra todas as diferenças do aquivo no repositorio local para a ver
 git log > mostra a lista de todos os commits, com hash (codigo), autor, data de ocorrencia e msg de commit
 
 git shortlog > versão resumida dos commits, agrupa no user, quantidade de commits e lista msg de commits
- 
+
+clear > limpa a tela do git bash
+
+git show "hash" > pega hash de algum commit passado e usa git show pra ver todos detalhes do commit
 
 
