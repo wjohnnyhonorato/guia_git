@@ -50,4 +50,6 @@ clear > limpa a tela do git bash
 
 git show "hash" > pega hash de algum commit passado e usa git show pra ver todos detalhes do commit
 
+apagar
+
 
