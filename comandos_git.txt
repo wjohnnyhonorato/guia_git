@@ -1,0 +1,50 @@
+botão direito na pasta repositorio local, git bash here > abre o git associado ao repositorio local
+
+git --version > versão do git instalado
+
+git config --global user.name "williamjohnny" > define o nome do usuário
+
+git config --global user.name > valida qual user está configurado
+
+git init > sinaliza ao git que esta pasta será um repositorio localmente
+
+git remote add origin https://github.com/wjohnnyhonorato/teste-udemy.git > vincula pasta no meu github 
+com o repositorio local git
+
+git status > mostra se existe algo para comitar no repositorio local (certifique-se que está abrindo o git na pasta
+repositório)
+	- se existirem arquivos não comitados serão listados em: "untracked files" em vermelho
+      - se algum arquivo já adicionados forem modificados aparecera em vermelho "modified"
+      - caso contrario será apresentado: "nothing to commit"
+
+git add "nome do arquivo não comitado com extenção" > os arquivos untracked (vermelho) foram adicionados no pacote de
+commit em "verde" (mas ainda não foram comitados)
+
+git config --global user.email "william-johnny@hotmail.com" > configura email do user, necessario para realizar commits
+
+git config --global user.name "wjohnnyhonorato" > define usuário, usado user do github
+
+git commit -m "Salva arquivo com comandos git e .py teste" > realiza o commit dos arquivos que foram add,
+o commit é uma alteração que agrupa todas as modificações e arquivos necessarios para a atualização do projeto.
+
+git push origin master > agora os arquivos preparados no commit são de fato enviados para o github, para branch "master"
+será solicitada a senha do github
+
+git pull origin master > pega do github as modificações feitas por outros devs, atualiza repositorio local com base no
+repositorio no github
+
+RESUMO INSERIR/ATUALIZAR ARQUIVOS GITHUB
+ git status
+ git add "nome arquivo"
+ git commit -m "descriçaõ do commit"
+ git push origin master
+
+git diff > mostra todas as diferenças do aquivo no repositorio local para a versão commitada, (+) são linhas adicionadas,
+(-) são linhas retiradas
+
+git log > mostra a lista de todos os commits, com hash (codigo), autor, data de ocorrencia e msg de commit
+
+git shortlog > versão resumida dos commits, agrupa no user, quantidade de commits e lista msg de commits
+ 
+
+
