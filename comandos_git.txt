@@ -20,6 +20,9 @@ repositório)
 git add "nome do arquivo não comitado com extenção" > os arquivos untracked (vermelho) foram adicionados no pacote de
 commit em "verde" (mas ainda não foram comitados)
 
+git add . > mesma função do git add, mas nesse caso o (.) significa pasta atual, adiciona tudo da pasta atual, util 
+para varios arquivos modificados
+
 git config --global user.email "william-johnny@hotmail.com" > configura email do user, necessario para realizar commits
 
 git config --global user.name "wjohnnyhonorato" > define usuário, usado user do github
@@ -34,10 +37,10 @@ git pull origin master > pega do github as modificações feitas por outros devs
 repositorio no github
 
 RESUMO INSERIR/ATUALIZAR ARQUIVOS GITHUB
- git status
- git add "nome arquivo"
- git commit -m "descriçaõ do commit"
- git push origin master
+	git status
+	git add "nome arquivo"
+	git commit -m "descriçaõ do commit"
+	git push origin master
 
 git diff > mostra todas as diferenças do aquivo no repositorio local para a versão commitada, (+) são linhas adicionadas,
 (-) são linhas retiradas
@@ -49,4 +52,44 @@ git shortlog > versão resumida dos commits, agrupa no user, quantidade de commi
 clear > limpa a tela do git bash
 
 git show "hash" > pega hash de algum commit passado e usa git show pra ver todos detalhes do commit
+
+git reset "hash" > retorna o estado do arquivo comitado no repositorio LOCAL para o estado da hash passada, verificar estados e hashs em
+"git log", porme a modificação ainda não foi feita, necessario checkout (não serve para arquivos que já estão no github) 
+
+git checkout "nome do arquivo que foi modificado" > Executa o reset do arquivo localmente, tira do add ou pacote commit, 
+processo iniciado no git reset (não serve para arquivos que já estão no github) 
+
+Se um outro dev modificar o codigo no github sem passar por voce vai ocorrer um conflito de sincornismo de repositorios
+no momento de um commit, para resolver o conflito, atualiza localmente, depois faz o commit da sua atualização
+	git pull origin master
+	git push origin master
+A mensagem CONFLICT pode aparecer após o commit, pois existe duas opções de versão (uma sua e outra do dev colaborador) 
+será necessario avaliar o codigo e decidir qual versão será comitada, isto feito 
+      git add
+      git commit
+      git push
+
+git clone "endereço url .git do repositorio terceiro" > copia o repositorio de um terceiro completamente 
+para o repositorio local
+
+.gitignore > é um arquivo que deve ser inserido no projeto com uma lista de arquivos que não devem ser 
+versionados ou comitados o (.) antes do arquivo diz que ele é oculto.
+
+readme > todo repositório deve ter um readme com informações para outras pessoas que possam utilizar os codigos
+
+DICAS
+ Clone repositorios para desenvolvimento de teste local
+ Faça pulls constantes para garantir que sempre está atualizado
+ commit sem medo, não é uma boa pratica um codigo com poucos commits, atualizações precisam ser registradas
+ boas mesg de commits, informativas e claras
+ Só de push com confiança de que o codigo não tem erros
+ Readme informativos de fato
+ Cuidado com arquivos com senha, adicione no git ignore
+
+
+
+
+
+
+
 
