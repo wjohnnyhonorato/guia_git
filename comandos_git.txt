@@ -1,3 +1,5 @@
+LISTA DE COMANDOS GIT ÚTEIS EM ORDEM DE UTILIZAÇÃO
+
 botão direito na pasta repositorio local, git bash here > abre o git associado ao repositorio local
 
 git --version > versão do git instalado
@@ -86,10 +88,4 @@ DICAS
  Readme informativos de fato
  Cuidado com arquivos com senha, adicione no git ignore
 
-
-
-
-
-
-
-
+FIM
