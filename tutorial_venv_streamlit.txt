@@ -34,6 +34,6 @@ basico venv local windows
 		(venv já deve ter instalado na venv as libs necessarias requirements.txt)
 		(Esse .py deve importar o modelo de ML treinado (PKL))
 	2. o modelo treinado deve estar salva na pasta do projeto
-	3. no cmd, cd pasta do projeto, ativa venv, dentro da venv: run streamlit run APP_STREAMLIT.py
+	3. no cmd, cd pasta do projeto, ativa venv, dentro da venv: streamlit run APP_STREAMLIT.py
 	4. será aberto no browser local a aplicação
 
