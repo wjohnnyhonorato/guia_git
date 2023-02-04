@@ -36,4 +36,17 @@ basico venv local windows
 	2. o modelo treinado deve estar salva na pasta do projeto
 	3. no cmd, cd pasta do projeto, ativa venv, dentro da venv: streamlit run APP_STREAMLIT.py
 	4. será aberto no browser local a aplicação
+	
+8. Deploy aplicação streamlit Cloud
+	1. criar um repositorio publico no github para o projeto, com aqruivo readme
+	2. realizar o push e commit de todos os arquivos do projeto (requirements.txt, .py, pkl, etc) menos aruivos na pasta da venv
+	3. Se cadastrar na pagina do streamlit cloud e conectar a conta do github
+	4. logar no streamlit.io > new app
+	5. informar na tabela o endereço github do repositorio do projeto, branch = main e o nome do arquivo .py com o app
+	6. botão deploy, aguardar build, pode levar varios minutos, app é carregado ao fim.
+
+9. Operação e monitoramento
+        1. na pagina share.streamlit.io é possivel ver a lista de app em produção
+	2. é disponivel ver statiticas de acesso, reboot da aplicação, deletar e settings
+	3. em settings é possivel mudar permissões de viz e configurar variaveis de ambiente ou chaves de acesso necessarias para a aplicação
 
